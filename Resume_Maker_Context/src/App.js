@@ -11,23 +11,14 @@ function App() {
     
     <BrowserRouter>
    
-           
-            
-    
-      
-         
           <Routes>
 
-           
-            
-            
-            <Route path="/" element={<Navbar />}>
-            <Route index element={<ProtectedRoutes><Details /></ProtectedRoutes>} />
-            <Route path="/resume" element={<ProtectedRoutes><Resume /></ProtectedRoutes>} />
-            <Route path="/signin" element={<Signin />} />
-            <Route path="/signup" element={<Signup />} />
+            <Route index element={<Details />} />
+            <Route path="/resume"  />
+            <Route path="/signin"  />
+            <Route path="/signup"  />
              
-            </Route>
+          
          
 
           </Routes>

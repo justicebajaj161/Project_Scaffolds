@@ -7,8 +7,8 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         
-              <NavLink to="/" activeClassName="active-link">Details</NavLink>
-              <NavLink to="/resume" activeClassName="active-link">Resume</NavLink>
+              <NavLink to="/" activeclassname="active-link">Details</NavLink>
+              <NavLink to="/resume" activeclassname="active-link">Resume</NavLink>
         
 
         <button className="navbar-toggler" >
@@ -16,8 +16,8 @@ const Navbar = () => {
         </button>
 
     
-              <NavLink to="/signin" activeClassName="active-link">Sign In</NavLink>
-              <NavLink to="/signup" activeClassName="active-link">Sign Up</NavLink>
+              <NavLink to="/signin" activeclassname="active-link">Sign In</NavLink>
+              <NavLink to="/signup" activeclassname="active-link">Sign Up</NavLink>
          
        
             <span onClick={handleLogout} style={{ cursor: "pointer" }}>Logout</span>

@@ -13,12 +13,12 @@ function App() {
   
 
       <BrowserRouter>
-        <Navbar /> {/* Moved Navbar outside Routes for it to always show */}
+        
         <Routes>
-          <Route path="/" element={<ProtectedRoutes><Details /></ProtectedRoutes>} index />
-          <Route path="/resume" element={<ProtectedRoutes><Resume /></ProtectedRoutes>} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/signup" element={<Signup />} />
+        <Route index element={<Details />} />
+            <Route path="/resume"  />
+            <Route path="/signin"  />
+            <Route path="/signup"  />
         </Routes>
       </BrowserRouter>
     </>
